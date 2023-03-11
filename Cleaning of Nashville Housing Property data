@@ -146,7 +146,7 @@ Update NashvilleHousing               -- Replace 1 values with Yes values in Upd
 Set UpdatedSoldAsVacant = 'Yes'
 Where UpdatedSoldAsVacant = '1'
 
-Update NashvilleHousing               -- Replace 2 values with No values in UpdatedSoldAsVacant column
+Update NashvilleHousing               -- Replace 0 values with No values in UpdatedSoldAsVacant column
 Set UpdatedSoldAsVacant = 'No'
 Where UpdatedSoldAsVacant = '0'
 
