@@ -27,7 +27,7 @@ SET SaleDate = SaleDate, CONVERT(Date, SaleDate)
 
 -------------------------------------------------------------------
 
-------------Populize Property Address data
+------------Fill input for Property Address data
 
 Select *
 from SQLProject.dbo.NashvilleHousing
@@ -52,7 +52,7 @@ JOIN SQLProject.dbo.NashvilleHousing b -- created alisa for Nashville table as b
 Where a.PropertyAddress is null
 
 -----------------------------------------------------------------------
---Seperating PropertyAddress into Individual columns. Such as: (Address, City, State)
+--Separating PropertyAddress into Individual columns. Such as: (Address, City, State)
 
 Select PropertyAddress
 from SQLProject.dbo.NashvilleHousing
@@ -192,4 +192,4 @@ Alter TABLE SQLProject.dbo.NashvilleHousing   --Alters table by deleting the fol
 DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress
 
 ALTER TABLE SQLProject.dbo.NashvilleHousing	  -- Alters Table by droping / deleting the SalesDate column
-DROP COLUMN SaleDate  
+DROP COLUMN SaleDate
